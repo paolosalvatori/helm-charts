@@ -1,10 +1,10 @@
-{{- $portName := include "syntheticapi.portName" . -}}
+{{- $portName := include "testapi.portName" . -}}
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "syntheticapi.fullname" . }}
+  name: {{ include "testapi.fullname" . }}
   labels:
-    {{- include "syntheticapi.labels" . | nindent 4 }}
+    {{- include "testapi.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -13,4 +13,4 @@ spec:
       protocol: TCP
       name: {{ $portName }}
   selector:
-    {{- include "syntheticapi.selectorLabels" . | nindent 4 }}
+    {{- include "testapi.selectorLabels" . | nindent 4 }}
