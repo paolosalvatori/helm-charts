@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/paolosalvatori/helm-charts/releases/download/syntheticapi-0.1.0/syntheticapi-0.1.0.tgz
     version: 0.1.0
+  testapi:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-21T16:39:14.299412613Z"
+    description: A Helm chart for Kubernetes
+    digest: eef51c85c34be15925455285b7c1353ee17dfde8d4bb3f7aa9d876df54b22105
+    name: testapi
+    type: application
+    urls:
+    - https://github.com/paolosalvatori/helm-charts/releases/download/testapi-0.1.0/testapi-0.1.0.tgz
+    version: 0.1.0
 generated: "2022-03-21T16:31:32.779235085Z"
