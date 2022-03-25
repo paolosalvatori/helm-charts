@@ -48,10 +48,10 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-nginx
     kubernetes.io/ingress.class: nginx
   hosts:
-  - host: testapi.baborbird.com
+  - host: testapi.babosbird.com
   tls:
   - hosts:
-    - testapi.baborbird.com
+    - testapi.babosbird.com
 
 resources: 
   requests:
