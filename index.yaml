@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   testapi:
   - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2022-04-05T17:39:12.642289783Z"
+    description: A Helm chart for Kubernetes
+    digest: 71e7944f50d50e6b301e93e3ad23a5e5cbaf4ffb5aded3e418b263b13ae49677
+    name: testapi
+    type: application
+    urls:
+    - https://github.com/paolosalvatori/helm-charts/releases/download/testapi-1.1.0/testapi-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 1.17.0
     created: "2022-04-05T16:57:33.969030257Z"
     description: A Helm chart for Kubernetes
