@@ -50,6 +50,7 @@ spec:
             failureThreshold: {{ .failureThreshold | default 1 }}
             initialDelaySeconds: {{ .initialDelaySeconds | default 10 }}
             periodSeconds: {{ .periodSeconds | default 10 }}
+            timeoutSeconds: {{ .timeoutSeconds | default 10 }}
           {{- end }}
           {{- with .Values.readinessProbe}}
           readinessProbe:
@@ -59,6 +60,7 @@ spec:
             failureThreshold: {{ .failureThreshold | default 1 }}
             initialDelaySeconds: {{ .initialDelaySeconds | default 10 }}
             periodSeconds: {{ .periodSeconds | default 10 }}
+            timeoutSeconds: {{ .timeoutSeconds | default 10 }}
           {{- end }}
           {{- with .Values.startupProbe}}
           startupProbe:
@@ -68,6 +70,7 @@ spec:
             failureThreshold: {{ .failureThreshold | default 1 }}
             initialDelaySeconds: {{ .initialDelaySeconds | default 10 }}
             periodSeconds: {{ .periodSeconds | default 10 }}
+            timeoutSeconds: {{ .timeoutSeconds | default 10 }}
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
