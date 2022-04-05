@@ -98,6 +98,7 @@ livenessProbe:
   failureThreshold: 1
   initialDelaySeconds: 5
   periodSeconds: 10
+  timeoutSeconds: 10
 
 readinessProbe:
   httpGet:
@@ -105,6 +106,7 @@ readinessProbe:
   failureThreshold: 1
   initialDelaySeconds: 5
   periodSeconds: 10
+  timeoutSeconds: 10
 
 startupProbe:
   httpGet:
@@ -112,6 +114,7 @@ startupProbe:
   failureThreshold: 30
   initialDelaySeconds: 5
   periodSeconds: 10
+  timeoutSeconds: 10
 
 env:
 - name: POD_IP
